@@ -1,0 +1,86 @@
+/* 공통적으로 사용할 css */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#wrapper{
+  width:960px;
+  border:5px solid rgb(5, 5, 5);
+  margin:0 auto;
+  /*position: relative;*/
+}
+header{
+  background-color: rgb(108, 34, 237);
+}
+
+nav{
+  background-color:rgb(21, 12, 191);
+}
+
+.menu{
+  float:left;
+  width:200px;
+  height:80px;
+  border:1px solid black;
+  text-align:center;
+  line-height:40px;
+  color: rgb(249, 245, 244);
+}
+
+#mainwrapper{
+height:800px;
+}
+
+.section0{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+#section_1{
+  background-color: rgb(212, 32, 183);
+  width: 200px;
+  float: left;
+}
+
+#section_2{
+  background-color: rgb(190, 100, 39);
+  width: 300px;
+  float: left;
+}
+
+.f_article{
+  background-color: rgb(57, 32, 105);
+  border: 1px solid rgb(9, 9, 9);
+  color:white;
+}
+
+.s_article{
+  background-color: rgb(221, 217, 236);
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.asidewrapper{
+  position:relative;
+  width: 200px;
+  float: right;
+
+}
+
+aside{
+  background-color: rgb(10, 231, 245);
+  position:fixed;
+}
+
+footer{
+  background-color: rgb(185, 232, 27);
+  position:absolute;
+  bottom:0;
+  width:960px;
+  height:100px;
+
+}

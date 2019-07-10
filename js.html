@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html css 수업 </title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/script.js"></script>
+
+    <style>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .hidden{
+        display:none;
+      }
+
+      nav{
+        width:800px;
+      }
+      .navul{
+        background-color:rgb(5, 29, 251);
+      }
+      .navli{
+        width:100px;
+        line-height:80px;
+        text-align:center;
+        float:left;
+        border:2px solid black;
+
+      }
+
+      .slide{
+        background-color:rgb(235, 88, 133);
+        height:100px;
+        position:absolute;
+        width:800px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+
+<nav>
+  <ul class="navul clearfix">
+    <li class="navli">menu1</li>
+    <li class="navli">menu2</li>
+    <li class="navli">menu3</li>
+    <li class="navli">menu4</li>
+    <li class="navli">menu5</li>
+  </ul>
+  <div class="slide hidden">
+  nav내려오는 부분
+  </div>
+</nav>
+    <script>
+      var hello = "Hello, World!";
+      document.write(hello);
+
+      var date = new Date();
+      result1 = date.getDate();
+      result2 = date.getDay();
+
+      console.log("오늘날짜:"+ result1 + "dddddd");
+
+      arr = ["일","월","화","수","목","금","토"];
+      console.log("오늘 요일:"+ arr[result2] + "입니다");
+
+      rainbow = ["빨","주","노","초","파","남","보"];
+      console.log(rainbow[4]);
+
+      var str = new String("hello");
+      result3 = str.charAt(2);
+      console.log(result3);
+
+    </script>
+
+    <h1>js페이지입니다</h1>
+    <ul>
+      <li>
+        <input type="button" value = "js 1번 실습" onclick = "test1()"/>
+      </li>
+      <li>
+        <input type="button" value = "js 2번 실습" onclick = "test2()"/>
+      </li>
+    </ul>
+
+<!-- 태그로 제어하기 -->
+    <h3> 태그로 제어하기 </h3>
+    <ul>
+      <li>1입니다</li>
+      <li>2입니다</li>
+      <li>3입니다</li>
+      <li>4입니다</li>
+      <li>5입니다</li>
+    </ul>
+    <input type="button" value = "태그 실습" onclick = "test3()"/>
+<!-- 클래스로 제어하기 -->
+    <h3> 클래스로 제어하기 </h3>
+    <ul>
+      <li class = "group">1입니다</li>
+      <li class = "group">2입니다</li>
+      <li class = "group">3입니다</li>
+      <li class = "group">4입니다</li>
+      <li class = "group">5입니다</li>
+    </ul>
+    <input type="button" value = "클래스 실습" onclick = "test4()"/>
+<!-- ID로 제어하기 -->
+    <h3> ID로 제어하기 </h3>
+    <ul>
+      <li id = "li1">1입니다</li>
+      <li id = "li2">2입니다</li>
+      <li id = "li3">3입니다</li>
+      <li id = "li4">4입니다</li>
+      <li id = "li5">5입니다</li>
+    </ul>
+    <input type="button" value = "ID 실습" onclick = "test5()"/>
+
+    <button id = "btn1" onclick = "alert('event onclick')">버튼클릭</button>
+    <button id = "btn2" onmouseover = "alert('event onmouseover')">버튼 마우스 올리기</button>
+
+  </body>
+</html>
